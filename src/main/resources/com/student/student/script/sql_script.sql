@@ -308,6 +308,3 @@ insert into coef
 values ('design', 3, 1);
 insert into coef
 values ('design', 4, 1);
-
-
-

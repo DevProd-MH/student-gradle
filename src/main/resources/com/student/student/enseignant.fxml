@@ -6,6 +6,7 @@
 <?import javafx.scene.control.DatePicker?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.control.ToggleButton?>
@@ -15,7 +16,7 @@
 
 <AnchorPane fx:id="ap" prefHeight="596.0" prefWidth="767.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.student.student.ensController">
    <children>
-      <ImageView fx:id="img" fitHeight="600.0" fitWidth="800.0" pickOnBounds="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <ImageView fx:id="img" fitHeight="720.0" fitWidth="1366.0" pickOnBounds="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <image>
             <Image url="@img/board1.png" />
          </image>
@@ -24,6 +25,15 @@
          <columnResizePolicy>
             <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
          </columnResizePolicy>
+         <columns>
+            <TableColumn prefWidth="75.0" text="Column X" />
+            <TableColumn prefWidth="75.0" text="Column X" />
+            <TableColumn prefWidth="75.0" text="Column X" />
+            <TableColumn prefWidth="75.0" text="Column X" />
+            <TableColumn prefWidth="75.0" text="Column X" />
+            <TableColumn prefWidth="75.0" text="Column X" />
+            <TableColumn prefWidth="75.0" text="Column X" />
+         </columns>
       </TableView>
       <TextField fx:id="nm" accessibleText="name" layoutX="634.0" layoutY="23.0" onKeyReleased="#checkValidity" prefHeight="23.0" prefWidth="140.0" AnchorPane.rightAnchor="26.0" />
       <TextField fx:id="ln" accessibleText="name" layoutX="601.0" layoutY="57.0" onKeyReleased="#checkValidity" prefHeight="23.0" prefWidth="140.0" AnchorPane.rightAnchor="26.0" />
@@ -31,25 +41,25 @@
       <ChoiceBox fx:id="cb" layoutX="601.0" layoutY="127.0" prefHeight="23.0" prefWidth="140.0" AnchorPane.rightAnchor="26.0" />
       <TextField fx:id="em" accessibleText="email" disable="true" layoutX="601.0" layoutY="160.0" onKeyReleased="#checkValidity" prefHeight="23.0" prefWidth="140.0" AnchorPane.rightAnchor="26.0" />
       <TextField fx:id="pn" accessibleText="phone" disable="true" layoutX="601.0" layoutY="198.0" onKeyReleased="#checkValidity" prefHeight="23.0" prefWidth="140.0" AnchorPane.rightAnchor="26.0" />
-      <TextField fx:id="mdl" accessibleText="name" layoutX="601.0" layoutY="233.0" prefHeight="23.0" prefWidth="140.0" AnchorPane.rightAnchor="26.0" />
+      <TextField fx:id="mdl" accessibleText="name" disable="true" layoutX="601.0" layoutY="233.0" prefHeight="23.0" prefWidth="140.0" AnchorPane.rightAnchor="26.0" />
       <ComboBox fx:id="lv" layoutX="601.0" layoutY="270.0" prefHeight="23.0" prefWidth="140.0" AnchorPane.rightAnchor="26.0" />
       <TextField fx:id="cls" accessibleText="class" layoutX="601.0" layoutY="310.0" onKeyReleased="#checkValidity" prefHeight="23.0" prefWidth="140.0" AnchorPane.rightAnchor="26.0" />
       <ToggleButton fx:id="tb" layoutX="470.0" layoutY="350.0" mnemonicParsing="false" onAction="#switchTable" prefHeight="25.0" prefWidth="316.0" text="Student" AnchorPane.rightAnchor="14.0" />
       <Button fx:id="ins" layoutX="470.0" layoutY="397.0" mnemonicParsing="false" onAction="#insert" prefHeight="23.0" prefWidth="316.0" text="Insert" AnchorPane.rightAnchor="14.0" />
-      <TextField fx:id="ser" layoutX="431.0" layoutY="459.0" prefHeight="23.0" prefWidth="316.0" promptText="Search" AnchorPane.rightAnchor="20.0" />
-      <ComboBox fx:id="sr" layoutX="431.0" layoutY="491.0" prefHeight="23.0" prefWidth="316.0" AnchorPane.rightAnchor="20.0" />
-      <Button fx:id="edt" disable="true" layoutX="431.0" layoutY="522.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="140.0" text="Edit" AnchorPane.rightAnchor="196.0" />
-      <Button fx:id="dlt" layoutX="607.0" layoutY="521.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="140.0" text="Delete" AnchorPane.rightAnchor="20.0" />
-      <Label layoutX="429.0" layoutY="27.0" text="Name" AnchorPane.rightAnchor="312.0" />
-      <Label layoutX="429.0" layoutY="61.0" text="Last name" AnchorPane.rightAnchor="279.0" />
-      <Label layoutX="429.0" layoutY="95.0" text="Birthday date" AnchorPane.rightAnchor="253.0" />
-      <Label layoutX="427.0" layoutY="131.0" text="Gender" AnchorPane.rightAnchor="301.0" />
-      <Label layoutX="430.0" layoutY="164.0" text="Email" AnchorPane.rightAnchor="304.0" />
-      <Label layoutX="430.0" layoutY="202.0" text="Phone number" AnchorPane.rightAnchor="259.0" />
-      <Label layoutX="430.0" layoutY="274.0" text="Level" AnchorPane.rightAnchor="304.0" />
-      <Label layoutX="430.0" layoutY="314.0" text="Class" AnchorPane.rightAnchor="304.0" />
+      <TextField fx:id="ser" layoutX="431.0" layoutY="459.0" onKeyReleased="#search" prefHeight="23.0" prefWidth="316.0" promptText="Search" AnchorPane.rightAnchor="20.0" />
+      <ComboBox fx:id="sr" layoutX="1030.0" layoutY="497.0" prefHeight="23.0" prefWidth="316.0" AnchorPane.rightAnchor="20.0" />
+      <Button fx:id="edt" disable="true" layoutX="1030.0" layoutY="539.0" mnemonicParsing="false" onAction="#edit" prefHeight="23.0" prefWidth="140.0" text="Edit" AnchorPane.rightAnchor="196.0" />
+      <Button fx:id="dlt" layoutX="1206.0" layoutY="538.0" mnemonicParsing="false" onAction="#dele" prefHeight="23.0" prefWidth="140.0" text="Delete" AnchorPane.rightAnchor="20.0" />
+      <Label layoutX="429.0" layoutY="27.0" prefHeight="15.0" prefWidth="140.0" text="Name" AnchorPane.rightAnchor="198.0" />
+      <Label layoutX="429.0" layoutY="61.0" prefHeight="15.0" prefWidth="140.0" text="Last name" AnchorPane.rightAnchor="198.0" />
+      <Label layoutX="429.0" layoutY="95.0" prefHeight="15.0" prefWidth="140.0" text="Birthday date" AnchorPane.rightAnchor="198.0" />
+      <Label layoutX="427.0" layoutY="131.0" prefHeight="15.0" prefWidth="140.0" text="Gender" AnchorPane.rightAnchor="198.0" />
+      <Label layoutX="430.0" layoutY="164.0" prefHeight="15.0" prefWidth="140.0" text="Email" AnchorPane.rightAnchor="198.0" />
+      <Label layoutX="430.0" layoutY="202.0" prefHeight="15.0" prefWidth="140.0" text="Phone number" AnchorPane.rightAnchor="198.0" />
+      <Label layoutX="430.0" layoutY="274.0" prefHeight="15.0" prefWidth="140.0" text="Level" AnchorPane.rightAnchor="198.0" />
+      <Label layoutX="430.0" layoutY="314.0" prefHeight="15.0" prefWidth="140.0" text="Class" AnchorPane.rightAnchor="198.0" />
       <Separator layoutX="421.0" layoutY="444.0" prefHeight="0.0" prefWidth="346.0" AnchorPane.rightAnchor="0.0" />
       <Label fx:id="lb" layoutX="464.0" layoutY="571.0" prefHeight="15.0" prefWidth="316.0" AnchorPane.bottomAnchor="14.0" AnchorPane.rightAnchor="20.0" />
-      <Label layoutX="430.0" layoutY="237.0" text="Module" AnchorPane.rightAnchor="298.0" />
+      <Label layoutX="430.0" layoutY="237.0" prefHeight="15.0" prefWidth="140.0" text="Module" AnchorPane.rightAnchor="198.0" />
    </children>
 </AnchorPane>

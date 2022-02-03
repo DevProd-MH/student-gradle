@@ -21,7 +21,7 @@ public class etudiantController implements Initializable {
     private final DbUtils db = new DbUtils();
     private final HashMap<String, String> lst = new HashMap<>();
     @FXML
-    ImageView img;// = new ImageView("src/main/resources/com/student/student/img/board1.png");
+    ImageView img;
     @FXML
     TableView<ObservableList<String>> tv;
     @FXML

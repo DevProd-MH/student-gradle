@@ -16,7 +16,7 @@
             <Image url="@img/whitenotebook.jpg" />
          </image>
       </ImageView>
-      <TextField fx:id="usr" layoutX="61.0" layoutY="61.0" onKeyTyped="#check" prefHeight="31.0" prefWidth="224.0" promptText="user" styleClass="textfield">
+      <TextField fx:id="usr" layoutX="61.0" layoutY="49.0" onKeyTyped="#check" prefHeight="31.0" prefWidth="224.0" promptText="user" styleClass="textfield">
          <cursor>
             <Cursor fx:constant="TEXT" />
          </cursor></TextField>
@@ -24,15 +24,15 @@
          <cursor>
             <Cursor fx:constant="TEXT" />
          </cursor></PasswordField>
-      <Button fx:id="submit" disable="true" layoutX="208.0" layoutY="185.0" maxWidth="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#submit" prefHeight="39.0" prefWidth="114.0" text="submit">
+      <Button fx:id="submit" disable="true" layoutX="208.0" layoutY="178.0" maxWidth="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#submit" prefHeight="39.0" prefWidth="114.0" text="submit">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor></Button>
-      <Button fx:id="exit" layoutX="18.0" layoutY="185.0" mnemonicParsing="false" onAction="#exit" prefHeight="29.0" prefWidth="114.0" text="exit">
+      <Button fx:id="exit" layoutX="18.0" layoutY="177.0" mnemonicParsing="false" onAction="#exit" prefHeight="39.0" prefWidth="114.0" text="exit">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor></Button>
       <Label fx:id="lb" layoutX="18.0" layoutY="225.0" prefHeight="23.0" prefWidth="310.0" />
-      <Label alignment="CENTER" layoutX="61.0" layoutY="21.0" prefHeight="15.0" prefWidth="224.0" style="-fx-text-fill: black;" text="LOGIN" textFill="#2f2c2c" />
+      <Label alignment="CENTER" layoutX="61.0" layoutY="13.0" prefHeight="15.0" prefWidth="224.0" style="-fx-text-fill: black;" text="LOGIN" textFill="#2f2c2c" />
    </children>
 </AnchorPane>

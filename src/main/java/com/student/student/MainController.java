@@ -57,6 +57,7 @@ public class MainController implements Initializable {
                 stage.setScene(scene);
                 stage.setResizable(false);
                 stage.show();
+                ap.getScene().getWindow().hide();
             } else {
                 lb.setText("Credentials not valid!");
                 lb.setStyle("-fx-text-fill : red");

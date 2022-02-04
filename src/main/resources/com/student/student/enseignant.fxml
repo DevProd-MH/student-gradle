@@ -18,7 +18,7 @@
    <children>
       <ImageView fx:id="img" fitHeight="720.0" fitWidth="1366.0" pickOnBounds="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <image>
-            <Image url="@img/board1.png" />
+            <Image url="@img/flat_bg.jpg" />
          </image>
       </ImageView>
       <TableView fx:id="tv" layoutX="7.0" layoutY="7.0" prefHeight="500.0" prefWidth="421.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="346.0" AnchorPane.topAnchor="0.0">
@@ -44,12 +44,40 @@
       <TextField fx:id="mdl" accessibleText="name" disable="true" layoutX="601.0" layoutY="233.0" prefHeight="23.0" prefWidth="140.0" AnchorPane.rightAnchor="26.0" />
       <ComboBox fx:id="lv" layoutX="601.0" layoutY="270.0" prefHeight="23.0" prefWidth="140.0" AnchorPane.rightAnchor="26.0" />
       <TextField fx:id="cls" accessibleText="class" layoutX="601.0" layoutY="310.0" onKeyReleased="#checkValidity" prefHeight="23.0" prefWidth="140.0" AnchorPane.rightAnchor="26.0" />
-      <ToggleButton fx:id="tb" layoutX="470.0" layoutY="350.0" mnemonicParsing="false" onAction="#switchTable" prefHeight="25.0" prefWidth="316.0" text="Student" AnchorPane.rightAnchor="14.0" />
-      <Button fx:id="ins" layoutX="470.0" layoutY="397.0" mnemonicParsing="false" onAction="#insert" prefHeight="23.0" prefWidth="316.0" text="Insert" AnchorPane.rightAnchor="14.0" />
+      <ToggleButton fx:id="tb" alignment="CENTER_LEFT" contentDisplay="RIGHT" graphicTextGap="220.0" layoutX="470.0" layoutY="350.0" mnemonicParsing="false" onAction="#switchTable" prefHeight="31.0" prefWidth="316.0" text="Student" AnchorPane.rightAnchor="14.0">
+         <graphic>
+            <ImageView fitHeight="23.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/classroom.png" />
+               </image>
+            </ImageView>
+         </graphic></ToggleButton>
+      <Button fx:id="ins" contentDisplay="RIGHT" graphicTextGap="230.0" layoutX="470.0" layoutY="397.0" mnemonicParsing="false" onAction="#insert" prefHeight="28.0" prefWidth="316.0" text="Insert" AnchorPane.rightAnchor="14.0">
+         <graphic>
+            <ImageView fitHeight="23.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/banner.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
       <TextField fx:id="ser" layoutX="431.0" layoutY="459.0" onKeyReleased="#search" prefHeight="23.0" prefWidth="316.0" promptText="Search" AnchorPane.rightAnchor="20.0" />
       <ComboBox fx:id="sr" layoutX="1030.0" layoutY="497.0" prefHeight="23.0" prefWidth="316.0" AnchorPane.rightAnchor="20.0" />
-      <Button fx:id="edt" disable="true" layoutX="1030.0" layoutY="539.0" mnemonicParsing="false" onAction="#edit" prefHeight="23.0" prefWidth="140.0" text="Edit" AnchorPane.rightAnchor="196.0" />
-      <Button fx:id="dlt" layoutX="1206.0" layoutY="538.0" mnemonicParsing="false" onAction="#dele" prefHeight="23.0" prefWidth="140.0" text="Delete" AnchorPane.rightAnchor="20.0" />
+      <Button fx:id="edt" contentDisplay="RIGHT" disable="true" graphicTextGap="60.0" layoutX="1028.0" layoutY="536.0" mnemonicParsing="false" onAction="#edit" prefHeight="26.0" prefWidth="140.0" text="Edit" AnchorPane.rightAnchor="198.0">
+         <graphic>
+            <ImageView fitHeight="23.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/edit-128.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Button fx:id="dlt" contentDisplay="RIGHT" graphicTextGap="50.0" layoutX="1206.0" layoutY="538.0" mnemonicParsing="false" onAction="#dele" prefHeight="23.0" prefWidth="140.0" text="Delete" AnchorPane.rightAnchor="20.0">
+         <graphic>
+            <ImageView fitHeight="23.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/bluescratch.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
       <Label layoutX="429.0" layoutY="27.0" prefHeight="15.0" prefWidth="140.0" text="Name" AnchorPane.rightAnchor="198.0" />
       <Label layoutX="429.0" layoutY="61.0" prefHeight="15.0" prefWidth="140.0" text="Last name" AnchorPane.rightAnchor="198.0" />
       <Label layoutX="429.0" layoutY="95.0" prefHeight="15.0" prefWidth="140.0" text="Birthday date" AnchorPane.rightAnchor="198.0" />

@@ -25,6 +25,7 @@
     -fx-background-color: transparent;
     -fx-border-style: solid;
     -fx-border-width: 1;
+    -fx-border-color: white;
 }
 
 .combo-box .arrow {
@@ -45,56 +46,59 @@
     -fx-background-color: transparent;
 }
 
-.combo-box .combo-box-popup .list-view, .combo-box .combo-box-popup .list-cell {
-    -fx-background-color: #043700;
+.combo-box .combo-box-popup .list-view,
+.combo-box .combo-box-popup .list-cell {
+    -fx-background-color: #5898f8;
     -fx-text-fill: white;
 }
 
 .combo-box .combo-box-popup .list-cell:hover {
-    -fx-text-fill: yellow;
-    -fx-background-color: green;
+    -fx-text-fill: rgb(51, 0, 170);
+    -fx-background-color: rgb(14, 177, 206);
 }
 
 .choice-box {
     -fx-background-color: transparent;
     -fx-border-style: solid;
     -fx-border-width: 1;
+    -fx-border-color: white;
 }
 
 .choice-box .context-menu {
-    -fx-background-color: #043700;
+    -fx-background-color: #5898f8;
     -fx-text-fill: white;
 }
 
 .choice-box .menu-item:hover {
-    -fx-text-fill: yellow;
-    -fx-background-color: green;
+    -fx-text-fill: rgb(51, 0, 170);
+    -fx-background-color: rgb(14, 177, 206);
 }
 
-.choice-box .menu-item > .label {
+.choice-box .menu-item>.label {
     -fx-text-fill: white;
 }
 
-.choice-box .menu-item:focused > .label {
+.choice-box .menu-item:focused>.label {
     -fx-text-fill: white;
 }
 
 .date-picker {
     -fx-background-color: transparent;
+    -fx-text-fill: black;
 }
 
-.date-picker:editable > .arrow-button > * {
+.date-picker:editable>.arrow-button>* {
     -fx-background-color: white;
 }
 
-.date-picker > .arrow-button {
+.date-picker>.arrow-button {
     -fx-background-color: transparent;
 }
 
 .toggle-button {
     -fx-background-color: #c3c4c4,
-    linear-gradient(#d6d6d6 50%, white 100%),
-    radial-gradient(center 50% -40%, radius 200%, #e6e6e6 45%, rgba(230, 230, 230, 0) 50%);
+        linear-gradient(#d6d6d6 50%, white 100%),
+        radial-gradient(center 50% -40%, radius 200%, #e6e6e6 45%, rgba(230, 230, 230, 0) 50%);
     -fx-background-radius: 30;
     -fx-background-insets: 0, 1, 1;
     -fx-text-fill: black;
@@ -103,8 +107,8 @@
 
 .toggle-button:hover {
     -fx-background-color: linear-gradient(#f2f2f2, #d6d6d6),
-    linear-gradient(#fcfcfc 0%, #d9d9d9 20%, #d6d6d6 100%),
-    linear-gradient(#dddddd 0%, #f6f6f6 50%);
+        linear-gradient(#fcfcfc 0%, #d9d9d9 20%, #d6d6d6 100%),
+        linear-gradient(#dddddd 0%, #f6f6f6 50%);
     -fx-background-radius: 8, 7, 6;
     -fx-background-insets: 0, 1, 2;
     -fx-text-fill: black;
@@ -198,8 +202,8 @@
 
 .button {
     -fx-background-color: #c3c4c4,
-    linear-gradient(#d6d6d6 50%, white 100%),
-    radial-gradient(center 50% -40%, radius 200%, #e6e6e6 45%, rgba(230, 230, 230, 0) 50%);
+        linear-gradient(#d6d6d6 50%, white 100%),
+        radial-gradient(center 50% -40%, radius 200%, #e6e6e6 45%, rgba(230, 230, 230, 0) 50%);
     -fx-background-radius: 30;
     -fx-background-insets: 0, 1, 1;
     -fx-text-fill: black;
@@ -208,8 +212,8 @@
 
 .button:hover {
     -fx-background-color: linear-gradient(#f2f2f2, #d6d6d6),
-    linear-gradient(#fcfcfc 0%, #d9d9d9 20%, #d6d6d6 100%),
-    linear-gradient(#dddddd 0%, #f6f6f6 50%);
+        linear-gradient(#fcfcfc 0%, #d9d9d9 20%, #d6d6d6 100%),
+        linear-gradient(#dddddd 0%, #f6f6f6 50%);
     -fx-background-radius: 8, 7, 6;
     -fx-background-insets: 0, 1, 2;
     -fx-text-fill: black;
@@ -223,13 +227,14 @@
 
 .textfield {
     -fx-background-color: linear-gradient(#f2f2f2, #d6d6d6),
-    linear-gradient(#fcfcfc 0%, #d9d9d9 20%, #d6d6d6 100%),
-    linear-gradient(#dddddd 0%, #f6f6f6 50%);
+        linear-gradient(#fcfcfc 0%, #d9d9d9 20%, #d6d6d6 100%),
+        linear-gradient(#dddddd 0%, #f6f6f6 50%);
     -fx-background-radius: 8, 7, 6;
     -fx-background-insets: 0, 1, 2;
     -fx-text-fill: black;
     -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.6), 5, 0.0, 0, 1);
 }
+
 .title-bar {
     -fx-padding: 10px;
     -fx-background-color: darkgreen;

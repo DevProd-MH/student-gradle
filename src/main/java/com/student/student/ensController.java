@@ -160,7 +160,6 @@ public class ensController implements Initializable {
     }
     
     private String getDate () {
-        System.out.println(dateFormat(dt.getEditor().getText()));
         return dateFormat(dt.getEditor().getText());
     }
     

@@ -19,6 +19,7 @@ public class Application extends javafx.application.Application {
     
     @Override
     public void start (Stage stage) throws IOException {
+        //String filePath = System.getProperty("user.home") + File.separatorChar + "Desktop" + File.separatorChar + ".setup.dev";
         String filePath = "src/main/resources/com/student/student/setup/setup.dev";
         BufferedReader reader = new BufferedReader(new FileReader(filePath));
         FileWriter myWriter;
@@ -43,6 +44,7 @@ public class Application extends javafx.application.Application {
             myWriter.flush();
             myWriter.close();
             DbUtils db = new DbUtils();
+            //boolean executed = db.excuteFile(System.getProperty("user.home") + File.separatorChar + "Desktop" + File.separatorChar + ".sql_script.sql");
             boolean executed = db.excuteFile("src/main/resources/com/student/student/script/sql_script.sql");
             if (executed) {
                 myWriter = new FileWriter(filePath);

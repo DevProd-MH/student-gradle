@@ -1,12 +1,16 @@
 <component name="ArtifactManager">
-  <artifact name="student:jar">
+  <artifact type="jar" name="student:jar">
     <output-path>$PROJECT_DIR$/out/artifacts/student_jar</output-path>
-    <root id="root">
+    <root id="archive" name="student_jar.jar">
       <element id="archive" name="student.jar">
         <element id="directory" name="META-INF">
           <element id="file-copy" path="$PROJECT_DIR$/src/main/resources/META-INF/MANIFEST.MF" />
         </element>
+        <element id="library" level="project" name="Gradle: com.github.librepdf:openpdf:1.3.26" />
+        <element id="module-output" name="student.main" />
       </element>
+      <element id="library" level="project" name="Gradle: org.apache.ibatis:ibatis-core:3.0" />
+      <element id="library" level="project" name="Gradle: org.mariadb.jdbc:mariadb-java-client:3.0.3" />
     </root>
   </artifact>
 </component>

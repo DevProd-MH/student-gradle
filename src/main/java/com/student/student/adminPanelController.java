@@ -20,7 +20,7 @@ public class adminPanelController {
             case "Etudiant":
             case "Enseignant":
                 String fileName = src.getText().concat(".fxml").toLowerCase();
-                FXMLLoader fxmlLoader = new FXMLLoader(Application.class.getResource(fileName));
+                FXMLLoader fxmlLoader = new FXMLLoader(mainApplication.class.getResource(fileName));
                 Scene scene = new Scene(fxmlLoader.load());
                 scene.getStylesheets().add(Objects.requireNonNull(getClass().getResource("/com/student/student/css/ui.css")).toExternalForm());
                 Stage stage = new Stage();

@@ -49,7 +49,7 @@ public class MainController implements Initializable {
                 lb.setText("Connection success");
                 lb.setStyle("-fx-text-fill: green");
                 Thread.sleep(2000);
-                FXMLLoader fxmlLoader = new FXMLLoader(Application.class.getResource("adminPanel.fxml"));
+                FXMLLoader fxmlLoader = new FXMLLoader(mainApplication.class.getResource("adminPanel.fxml"));
                 Scene scene = new Scene(fxmlLoader.load());
                 scene.getStylesheets().add(Objects.requireNonNull(getClass().getResource("/com/student/student/css/ui.css")).toExternalForm());
                 Stage stage = new Stage();

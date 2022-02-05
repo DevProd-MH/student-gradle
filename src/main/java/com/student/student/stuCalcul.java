@@ -7,6 +7,7 @@ import java.util.ArrayList;
 import java.util.Objects;
 
 
+@SuppressWarnings("all")
 public class stuCalcul {
     DbUtils db = new DbUtils();
     

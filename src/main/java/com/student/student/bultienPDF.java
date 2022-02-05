@@ -16,10 +16,10 @@ import java.util.ArrayList;
 import java.util.Date;
 
 
+@SuppressWarnings("all")
 public class bultienPDF {
     
-    public boolean createDocument (ArrayList<Student> StuList, Ensiegnant ensiegnant) {
-        
+    public void createDocument (ArrayList<Student> StuList, Ensiegnant ensiegnant) {
         String FOLDER_PATH = System.getProperty("user.home") + File.separatorChar + "Desktop" + File.separatorChar + ensiegnant.getNiv().concat("M" + ensiegnant.getCls()) + File.separatorChar + ensiegnant.getModule() + File.separatorChar;
         String PDF_NAME = ensiegnant.getLast_name().toUpperCase().concat(ensiegnant.getName().concat(".pdf"));
         try {
@@ -94,11 +94,9 @@ public class bultienPDF {
             document.open();
             document.add(table);
             document.close();
-            return true;
         } catch (DocumentException | FileNotFoundException e) {
             // TODO Auto-generated catch block
             e.printStackTrace();
-            return false;
         }
     }
     

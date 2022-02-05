@@ -17,8 +17,7 @@ public class adminPanelController {
     private void manage (ActionEvent ae) throws IOException {
         Button src = (Button) ae.getSource();
         switch (src.getText()) {
-            case "Etudiant":
-            case "Enseignant":
+            case "Etudiant", "Enseignant" -> {
                 String fileName = src.getText().concat(".fxml").toLowerCase();
                 FXMLLoader fxmlLoader = new FXMLLoader(mainApplication.class.getResource(fileName));
                 Scene scene = new Scene(fxmlLoader.load());
@@ -28,10 +27,8 @@ public class adminPanelController {
                 stage.setScene(scene);
                 stage.setMaximized(true);
                 stage.show();
-                break;
-            case "exit":
-                Platform.exit();
-                break;
+            }
+            case "exit" -> Platform.exit();
         }
     }
 }

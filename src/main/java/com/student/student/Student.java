@@ -5,8 +5,8 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 
 
+@SuppressWarnings("all")
 public class Student {
-    private DbUtils db = new DbUtils();
     private String id;
     private String name;
     private String last_name;
@@ -21,6 +21,7 @@ public class Student {
         try {
             stuCalcul stc = new stuCalcul();
             stc.calcGenMoy(id);
+            DbUtils db = new DbUtils();
             ResultSet rs = db.runQuery("SELECT id, name, last_name, date_nais, gender, niv_scho, class FROM StudentsList,stu_class WHERE id=stu_id and id = " + id);
             if (rs.next()) {
                 this.id = String.valueOf(rs.getInt("id"));

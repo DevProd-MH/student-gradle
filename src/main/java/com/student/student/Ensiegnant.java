@@ -4,6 +4,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 
 
+@SuppressWarnings("all")
 public class Ensiegnant {
     private String id;
     private String name;

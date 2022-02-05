@@ -10,6 +10,7 @@ import java.io.*;
 import java.util.Objects;
 
 
+@SuppressWarnings("all")
 public class mainApplication extends Application {
     public static void main (String[] args) {
         launch();

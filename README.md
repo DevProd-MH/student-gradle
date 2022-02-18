@@ -12,6 +12,6 @@ StudentManager is designed for teacher to manipulate their students marks with e
 
 ## License
 
-MIT
+GPL
 
 **Free Software, Hell Yeah!**

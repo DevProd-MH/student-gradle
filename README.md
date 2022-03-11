@@ -9,6 +9,9 @@ StudentManager is designed for teacher to manipulate their students marks with e
 - Insert, Edit notes (Student's marks)
 - Edit Teacher Profile
 
+## Donate
+[liberapay](https://liberapay.com/DevProd/donate)
+
 
 ## License
 
